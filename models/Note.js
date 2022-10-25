@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const autoIncrement = require("mongoose-sequence");
+const autoIncrement = require("mongoose-sequence")(mongoose);
 
 const noteSchema = new mongoose.Schema(
   {
